@@ -23,13 +23,13 @@ import 'package:flutter/material.dart';
 /// HUD=Heads Up Display
 ///
 class ModalProgressHUD extends StatelessWidget {
-  final bool inAsyncCall;
-  final double opacity;
-  final Color color;
-  final Widget progressIndicator;
-  final Offset offset;
-  final bool dismissible;
-  final Widget child;
+  final bool? inAsyncCall;
+  final double? opacity;
+  final Color? color;
+  final Widget? progressIndicator;
+  final Offset? offset;
+  final bool? dismissible;
+  final Widget? child;
 
   ModalProgressHUD({
     Key key,
