@@ -50,10 +50,10 @@ class ModalProgressHUD extends StatelessWidget {
 
     Widget layOutProgressIndicator;
     if (offset == null)
-      layOutProgressIndicator = Center(child: progressIndicator);
+      layOutProgressIndicator = Center(child: progressIndicator!);
     else {
       layOutProgressIndicator = Positioned(
-        child: progressIndicator,
+        child: progressIndicator!,
         left: offset.dx,
         top: offset.dy,
       );
@@ -63,8 +63,8 @@ class ModalProgressHUD extends StatelessWidget {
       children: [
         child,
         new Opacity(
-          child: new ModalBarrier(dismissible: dismissible, color: color),
-          opacity: opacity,
+          child: new ModalBarrier(dismissible: dismissible!, color: color),
+          opacity: opacity!,
         ),
         layOutProgressIndicator,
       ],
